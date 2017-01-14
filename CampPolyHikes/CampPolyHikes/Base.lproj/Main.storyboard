@@ -30,7 +30,7 @@
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eme-jz-hd2">
-                                <rect key="frame" x="0.0" y="70" width="375" height="423"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="os4-IE-p8f">
@@ -41,6 +41,10 @@
                                     <segue destination="Se6-xM-Evn" kind="show" id="v15-96-tD3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle-mask" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-dY-a4E">
+                                <rect key="frame" x="0.0" y="369" width="375" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -136,5 +140,6 @@
     </scenes>
     <resources>
         <image name="image1" width="593" height="305"/>
+        <image name="rectangle-mask" width="187" height="69"/>
     </resources>
 </document>
