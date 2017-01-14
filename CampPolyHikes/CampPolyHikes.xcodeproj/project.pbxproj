@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE64BBCA1E29EB6600645331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBC91E29EB6600645331 /* AppDelegate.swift */; };
+		EE64BBCC1E29EB6600645331 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBCB1E29EB6600645331 /* ViewController.swift */; };
+		EE64BBCF1E29EB6600645331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE64BBCD1E29EB6600645331 /* Main.storyboard */; };
+		EE64BBD11E29EB6600645331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE64BBD01E29EB6600645331 /* Assets.xcassets */; };
+		EE64BBD41E29EB6600645331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE64BBD21E29EB6600645331 /* LaunchScreen.storyboard */; };
+		EE64BBDF1E29EB6600645331 /* CampPolyHikesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBDE1E29EB6600645331 /* CampPolyHikesTests.swift */; };
+		EE64BBEA1E29EB6600645331 /* CampPolyHikesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBE91E29EB6600645331 /* CampPolyHikesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE64BBDB1E29EB6600645331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE64BBBE1E29EB6600645331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE64BBC51E29EB6600645331;
+			remoteInfo = CampPolyHikes;
+		};
+		EE64BBE61E29EB6600645331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE64BBBE1E29EB6600645331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE64BBC51E29EB6600645331;
+			remoteInfo = CampPolyHikes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE64BBC61E29EB6600645331 /* CampPolyHikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampPolyHikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE64BBC91E29EB6600645331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE64BBCB1E29EB6600645331 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE64BBCE1E29EB6600645331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE64BBD01E29EB6600645331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE64BBD31E29EB6600645331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE64BBD51E29EB6600645331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE64BBDA1E29EB6600645331 /* CampPolyHikesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampPolyHikesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE64BBDE1E29EB6600645331 /* CampPolyHikesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampPolyHikesTests.swift; sourceTree = "<group>"; };
+		EE64BBE01E29EB6600645331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE64BBE51E29EB6600645331 /* CampPolyHikesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampPolyHikesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE64BBE91E29EB6600645331 /* CampPolyHikesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampPolyHikesUITests.swift; sourceTree = "<group>"; };
+		EE64BBEB1E29EB6600645331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE64BBC31E29EB6600645331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE64BBD71E29EB6600645331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE64BBE21E29EB6600645331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE64BBBD1E29EB6600645331 = {
+			isa = PBXGroup;
+			children = (
+				EE64BBC81E29EB6600645331 /* CampPolyHikes */,
+				EE64BBDD1E29EB6600645331 /* CampPolyHikesTests */,
+				EE64BBE81E29EB6600645331 /* CampPolyHikesUITests */,
+				EE64BBC71E29EB6600645331 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE64BBC71E29EB6600645331 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE64BBC61E29EB6600645331 /* CampPolyHikes.app */,
+				EE64BBDA1E29EB6600645331 /* CampPolyHikesTests.xctest */,
+				EE64BBE51E29EB6600645331 /* CampPolyHikesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE64BBC81E29EB6600645331 /* CampPolyHikes */ = {
+			isa = PBXGroup;
+			children = (
+				EE64BBC91E29EB6600645331 /* AppDelegate.swift */,
+				EE64BBCB1E29EB6600645331 /* ViewController.swift */,
+				EE64BBCD1E29EB6600645331 /* Main.storyboard */,
+				EE64BBD01E29EB6600645331 /* Assets.xcassets */,
+				EE64BBD21E29EB6600645331 /* LaunchScreen.storyboard */,
+				EE64BBD51E29EB6600645331 /* Info.plist */,
+			);
+			path = CampPolyHikes;
+			sourceTree = "<group>";
+		};
+		EE64BBDD1E29EB6600645331 /* CampPolyHikesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE64BBDE1E29EB6600645331 /* CampPolyHikesTests.swift */,
+				EE64BBE01E29EB6600645331 /* Info.plist */,
+			);
+			path = CampPolyHikesTests;
+			sourceTree = "<group>";
+		};
+		EE64BBE81E29EB6600645331 /* CampPolyHikesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE64BBE91E29EB6600645331 /* CampPolyHikesUITests.swift */,
+				EE64BBEB1E29EB6600645331 /* Info.plist */,
+			);
+			path = CampPolyHikesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE64BBC51E29EB6600645331 /* CampPolyHikes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE64BBEE1E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikes" */;
+			buildPhases = (
+				EE64BBC21E29EB6600645331 /* Sources */,
+				EE64BBC31E29EB6600645331 /* Frameworks */,
+				EE64BBC41E29EB6600645331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampPolyHikes;
+			productName = CampPolyHikes;
+			productReference = EE64BBC61E29EB6600645331 /* CampPolyHikes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE64BBD91E29EB6600645331 /* CampPolyHikesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE64BBF11E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesTests" */;
+			buildPhases = (
+				EE64BBD61E29EB6600645331 /* Sources */,
+				EE64BBD71E29EB6600645331 /* Frameworks */,
+				EE64BBD81E29EB6600645331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE64BBDC1E29EB6600645331 /* PBXTargetDependency */,
+			);
+			name = CampPolyHikesTests;
+			productName = CampPolyHikesTests;
+			productReference = EE64BBDA1E29EB6600645331 /* CampPolyHikesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE64BBE41E29EB6600645331 /* CampPolyHikesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE64BBF41E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesUITests" */;
+			buildPhases = (
+				EE64BBE11E29EB6600645331 /* Sources */,
+				EE64BBE21E29EB6600645331 /* Frameworks */,
+				EE64BBE31E29EB6600645331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE64BBE71E29EB6600645331 /* PBXTargetDependency */,
+			);
+			name = CampPolyHikesUITests;
+			productName = CampPolyHikesUITests;
+			productReference = EE64BBE51E29EB6600645331 /* CampPolyHikesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE64BBBE1E29EB6600645331 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Josh Choi";
+				TargetAttributes = {
+					EE64BBC51E29EB6600645331 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					EE64BBD91E29EB6600645331 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE64BBC51E29EB6600645331;
+					};
+					EE64BBE41E29EB6600645331 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE64BBC51E29EB6600645331;
+					};
+				};
+			};
+			buildConfigurationList = EE64BBC11E29EB6600645331 /* Build configuration list for PBXProject "CampPolyHikes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE64BBBD1E29EB6600645331;
+			productRefGroup = EE64BBC71E29EB6600645331 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE64BBC51E29EB6600645331 /* CampPolyHikes */,
+				EE64BBD91E29EB6600645331 /* CampPolyHikesTests */,
+				EE64BBE41E29EB6600645331 /* CampPolyHikesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE64BBC41E29EB6600645331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE64BBD41E29EB6600645331 /* LaunchScreen.storyboard in Resources */,
+				EE64BBD11E29EB6600645331 /* Assets.xcassets in Resources */,
+				EE64BBCF1E29EB6600645331 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE64BBD81E29EB6600645331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE64BBE31E29EB6600645331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE64BBC21E29EB6600645331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE64BBCC1E29EB6600645331 /* ViewController.swift in Sources */,
+				EE64BBCA1E29EB6600645331 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE64BBD61E29EB6600645331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE64BBDF1E29EB6600645331 /* CampPolyHikesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE64BBE11E29EB6600645331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE64BBEA1E29EB6600645331 /* CampPolyHikesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE64BBDC1E29EB6600645331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE64BBC51E29EB6600645331 /* CampPolyHikes */;
+			targetProxy = EE64BBDB1E29EB6600645331 /* PBXContainerItemProxy */;
+		};
+		EE64BBE71E29EB6600645331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE64BBC51E29EB6600645331 /* CampPolyHikes */;
+			targetProxy = EE64BBE61E29EB6600645331 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE64BBCD1E29EB6600645331 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE64BBCE1E29EB6600645331 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE64BBD21E29EB6600645331 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE64BBD31E29EB6600645331 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE64BBEC1E29EB6600645331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE64BBED1E29EB6600645331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE64BBEF1E29EB6600645331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CampPolyHikes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE64BBF01E29EB6600645331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CampPolyHikes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE64BBF21E29EB6600645331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CampPolyHikesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampPolyHikes.app/CampPolyHikes";
+			};
+			name = Debug;
+		};
+		EE64BBF31E29EB6600645331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CampPolyHikesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampPolyHikes.app/CampPolyHikes";
+			};
+			name = Release;
+		};
+		EE64BBF51E29EB6600645331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CampPolyHikesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CampPolyHikes;
+			};
+			name = Debug;
+		};
+		EE64BBF61E29EB6600645331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CampPolyHikesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CampPolyHikes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE64BBC11E29EB6600645331 /* Build configuration list for PBXProject "CampPolyHikes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE64BBEC1E29EB6600645331 /* Debug */,
+				EE64BBED1E29EB6600645331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE64BBEE1E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE64BBEF1E29EB6600645331 /* Debug */,
+				EE64BBF01E29EB6600645331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE64BBF11E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE64BBF21E29EB6600645331 /* Debug */,
+				EE64BBF31E29EB6600645331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE64BBF41E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE64BBF51E29EB6600645331 /* Debug */,
+				EE64BBF61E29EB6600645331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE64BBBE1E29EB6600645331 /* Project object */;
+}
