@@ -31,6 +31,14 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eme-jz-hd2">
                                 <rect key="frame" x="0.0" y="70" width="375" height="423"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="os4-IE-p8f">
+                                <rect key="frame" x="267" y="592" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TrailExample"/>
+                                <connections>
+                                    <segue destination="Se6-xM-Evn" kind="show" id="v15-96-tD3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -48,5 +56,76 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
+        <!--Hello-->
+        <scene sceneID="k68-Wm-giU">
+            <objects>
+                <viewController id="Se6-xM-Evn" customClass="SecondViewController" customModule="CampPolyHikes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTy-ON-FCK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nw4-VP-4NW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qia-es-8h6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="azn-aF-D2O">
+                                <rect key="frame" x="77" y="82" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYG-ZK-gvc">
+                                <rect key="frame" x="134" y="256" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="Se6-xM-Evn" eventType="touchUpInside" id="Ksp-y2-3zO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-XP-HXV">
+                                <rect key="frame" x="228" y="256" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="Se6-xM-Evn" eventType="touchUpInside" id="IMT-xK-NZg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-31-hdn">
+                                <rect key="frame" x="0.0" y="227" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Bh-Uq-FGZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Trail Name here" id="eW1-ho-wUS">
+                                        <barButtonItem key="backBarButtonItem" title="back to home" id="wUZ-as-zaT"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Dcx-g1-cSg">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="KUG-5A-KRP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hello" id="lYp-nY-a2d"/>
+                    <connections>
+                        <outlet property="backOutlet" destination="oYG-ZK-gvc" id="nPS-c2-Ehg"/>
+                        <outlet property="imageLabel" destination="lTC-31-hdn" id="Waa-jH-Mna"/>
+                        <outlet property="imageView" destination="azn-aF-D2O" id="aAb-5p-KTD"/>
+                        <outlet property="nextOutlet" destination="7GR-XP-HXV" id="RSJ-ay-UT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUo-kd-9Zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="139"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="image1" width="593" height="305"/>
+    </resources>
 </document>
