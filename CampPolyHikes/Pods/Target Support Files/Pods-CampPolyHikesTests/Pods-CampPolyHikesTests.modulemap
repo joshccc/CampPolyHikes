@@ -1,0 +1,6 @@
+framework module Pods_CampPolyHikesTests {
+  umbrella header "Pods-CampPolyHikesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

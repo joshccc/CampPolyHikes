@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A6C88A681E2AD598001F6700 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C88A671E2AD598001F6700 /* SecondViewController.swift */; };
+		063138422AC5B38BAA9F8EA0 /* Pods_CampPolyHikesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF40C0F590774B005D7D87 /* Pods_CampPolyHikesTests.framework */; };
+		66A18AA0CE65357AF345746C /* Pods_CampPolyHikes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2F2B8C13AB0BCFADA4A434 /* Pods_CampPolyHikes.framework */; };
+		6AAEFDF9F14D09738E8695E8 /* Pods_CampPolyHikesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0044C56297526FCF2D4B8B7 /* Pods_CampPolyHikesUITests.framework */; };
+		EE2FEA381E2AB028000FDD45 /* Trails2017.kml in Resources */ = {isa = PBXBuildFile; fileRef = EE2FEA371E2AB028000FDD45 /* Trails2017.kml */; };
+		EE504D701E2AA8680017AD19 /* KMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EE504D6F1E2AA8680017AD19 /* KMLParser.m */; };
 		EE64BBCA1E29EB6600645331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBC91E29EB6600645331 /* AppDelegate.swift */; };
 		EE64BBCC1E29EB6600645331 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBCB1E29EB6600645331 /* ViewController.swift */; };
 		EE64BBCF1E29EB6600645331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE64BBCD1E29EB6600645331 /* Main.storyboard */; };
@@ -15,6 +20,7 @@
 		EE64BBD41E29EB6600645331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE64BBD21E29EB6600645331 /* LaunchScreen.storyboard */; };
 		EE64BBDF1E29EB6600645331 /* CampPolyHikesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBDE1E29EB6600645331 /* CampPolyHikesTests.swift */; };
 		EE64BBEA1E29EB6600645331 /* CampPolyHikesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBE91E29EB6600645331 /* CampPolyHikesUITests.swift */; };
+		EEC5D7321E2AD568001A91A1 /* Trails2017.geojson in Resources */ = {isa = PBXBuildFile; fileRef = EEC5D7311E2AD568001A91A1 /* Trails2017.geojson */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,16 @@
 
 /* Begin PBXFileReference section */
 		A6C88A671E2AD598001F6700 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		066040456221A925567B6245 /* Pods-CampPolyHikesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampPolyHikesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampPolyHikesUITests/Pods-CampPolyHikesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13DF40C0F590774B005D7D87 /* Pods_CampPolyHikesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampPolyHikesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0C75551C417C6902CBD020 /* Pods-CampPolyHikesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampPolyHikesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampPolyHikesUITests/Pods-CampPolyHikesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DD37DC26FF23D781BF32052 /* Pods-CampPolyHikesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampPolyHikesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampPolyHikesTests/Pods-CampPolyHikesTests.release.xcconfig"; sourceTree = "<group>"; };
+		90DBC91D730AB9E62FDFE345 /* Pods-CampPolyHikesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampPolyHikesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampPolyHikesTests/Pods-CampPolyHikesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94FD3C514D46BD97DC0BF2BE /* Pods-CampPolyHikes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampPolyHikes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampPolyHikes/Pods-CampPolyHikes.release.xcconfig"; sourceTree = "<group>"; };
+		AD2F2B8C13AB0BCFADA4A434 /* Pods_CampPolyHikes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampPolyHikes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2FEA371E2AB028000FDD45 /* Trails2017.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Trails2017.kml; sourceTree = "<group>"; };
+		EE504D6F1E2AA8680017AD19 /* KMLParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMLParser.m; sourceTree = "<group>"; };
+		EE504D711E2AA8910017AD19 /* KMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMLParser.h; sourceTree = "<group>"; };
 		EE64BBC61E29EB6600645331 /* CampPolyHikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampPolyHikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE64BBC91E29EB6600645331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE64BBCB1E29EB6600645331 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +65,10 @@
 		EE64BBE51E29EB6600645331 /* CampPolyHikesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampPolyHikesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE64BBE91E29EB6600645331 /* CampPolyHikesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampPolyHikesUITests.swift; sourceTree = "<group>"; };
 		EE64BBEB1E29EB6600645331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC5D7311E2AD568001A91A1 /* Trails2017.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trails2017.geojson; sourceTree = "<group>"; };
+		EEFF19C11E2AA9CA00668E4D /* CampPolyHikes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampPolyHikes-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0044C56297526FCF2D4B8B7 /* Pods_CampPolyHikesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampPolyHikesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B5F07422EFC52BBAA311A4 /* Pods-CampPolyHikes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampPolyHikes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampPolyHikes/Pods-CampPolyHikes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A18AA0CE65357AF345746C /* Pods_CampPolyHikes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063138422AC5B38BAA9F8EA0 /* Pods_CampPolyHikesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +92,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAEFDF9F14D09738E8695E8 /* Pods_CampPolyHikesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF3EAD274BE0D1C9B079D3D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD2F2B8C13AB0BCFADA4A434 /* Pods_CampPolyHikes.framework */,
+				13DF40C0F590774B005D7D87 /* Pods_CampPolyHikesTests.framework */,
+				F0044C56297526FCF2D4B8B7 /* Pods_CampPolyHikesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDC9759B82B0416909538C4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9B5F07422EFC52BBAA311A4 /* Pods-CampPolyHikes.debug.xcconfig */,
+				94FD3C514D46BD97DC0BF2BE /* Pods-CampPolyHikes.release.xcconfig */,
+				90DBC91D730AB9E62FDFE345 /* Pods-CampPolyHikesTests.debug.xcconfig */,
+				8DD37DC26FF23D781BF32052 /* Pods-CampPolyHikesTests.release.xcconfig */,
+				1A0C75551C417C6902CBD020 /* Pods-CampPolyHikesUITests.debug.xcconfig */,
+				066040456221A925567B6245 /* Pods-CampPolyHikesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE64BBBD1E29EB6600645331 = {
 			isa = PBXGroup;
 			children = (
+				EEC5D7311E2AD568001A91A1 /* Trails2017.geojson */,
+				EE2FEA371E2AB028000FDD45 /* Trails2017.kml */,
 				EE64BBC81E29EB6600645331 /* CampPolyHikes */,
 				EE64BBDD1E29EB6600645331 /* CampPolyHikesTests */,
 				EE64BBE81E29EB6600645331 /* CampPolyHikesUITests */,
 				EE64BBC71E29EB6600645331 /* Products */,
+				EDC9759B82B0416909538C4F /* Pods */,
+				DF3EAD274BE0D1C9B079D3D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +149,8 @@
 		EE64BBC81E29EB6600645331 /* CampPolyHikes */ = {
 			isa = PBXGroup;
 			children = (
+				EE504D6F1E2AA8680017AD19 /* KMLParser.m */,
+				EE504D711E2AA8910017AD19 /* KMLParser.h */,
 				EE64BBC91E29EB6600645331 /* AppDelegate.swift */,
 				EE64BBCB1E29EB6600645331 /* ViewController.swift */,
 				EE64BBCD1E29EB6600645331 /* Main.storyboard */,
@@ -106,6 +158,7 @@
 				EE64BBD01E29EB6600645331 /* Assets.xcassets */,
 				EE64BBD21E29EB6600645331 /* LaunchScreen.storyboard */,
 				EE64BBD51E29EB6600645331 /* Info.plist */,
+				EEFF19C11E2AA9CA00668E4D /* CampPolyHikes-Bridging-Header.h */,
 			);
 			path = CampPolyHikes;
 			sourceTree = "<group>";
@@ -135,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE64BBEE1E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikes" */;
 			buildPhases = (
+				12ABBB6DD0EF50BF7D041ABF /* [CP] Check Pods Manifest.lock */,
 				EE64BBC21E29EB6600645331 /* Sources */,
 				EE64BBC31E29EB6600645331 /* Frameworks */,
 				EE64BBC41E29EB6600645331 /* Resources */,
+				02617DFAF848D7FC2E4389F8 /* [CP] Embed Pods Frameworks */,
+				C1673E9B1D50E4B1C275AA6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE64BBF11E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesTests" */;
 			buildPhases = (
+				A533A7F11B95A8A5825DED33 /* [CP] Check Pods Manifest.lock */,
 				EE64BBD61E29EB6600645331 /* Sources */,
 				EE64BBD71E29EB6600645331 /* Frameworks */,
 				EE64BBD81E29EB6600645331 /* Resources */,
+				C69AE12B058F453D2DD667C9 /* [CP] Embed Pods Frameworks */,
+				F535BB485B71BEC02469A028 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE64BBF41E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesUITests" */;
 			buildPhases = (
+				03FED5463B36B411A3A9DD1B /* [CP] Check Pods Manifest.lock */,
 				EE64BBE11E29EB6600645331 /* Sources */,
 				EE64BBE21E29EB6600645331 /* Frameworks */,
 				EE64BBE31E29EB6600645331 /* Resources */,
+				FE6FA3AA193EFCCCF3CA366D /* [CP] Embed Pods Frameworks */,
+				72BD5017FE7C2F739E6E3B9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,7 +297,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC5D7321E2AD568001A91A1 /* Trails2017.geojson in Resources */,
 				EE64BBD41E29EB6600645331 /* LaunchScreen.storyboard in Resources */,
+				EE2FEA381E2AB028000FDD45 /* Trails2017.kml in Resources */,
 				EE64BBD11E29EB6600645331 /* Assets.xcassets in Resources */,
 				EE64BBCF1E29EB6600645331 /* Main.storyboard in Resources */,
 			);
@@ -257,12 +321,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02617DFAF848D7FC2E4389F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampPolyHikes/Pods-CampPolyHikes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03FED5463B36B411A3A9DD1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		12ABBB6DD0EF50BF7D041ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72BD5017FE7C2F739E6E3B9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampPolyHikesUITests/Pods-CampPolyHikesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A533A7F11B95A8A5825DED33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1673E9B1D50E4B1C275AA6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampPolyHikes/Pods-CampPolyHikes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69AE12B058F453D2DD667C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampPolyHikesTests/Pods-CampPolyHikesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F535BB485B71BEC02469A028 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampPolyHikesTests/Pods-CampPolyHikesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE6FA3AA193EFCCCF3CA366D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampPolyHikesUITests/Pods-CampPolyHikesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE64BBC21E29EB6600645331 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A6C88A681E2AD598001F6700 /* SecondViewController.swift in Sources */,
+				EE504D701E2AA8680017AD19 /* KMLParser.m in Sources */,
 				EE64BBCC1E29EB6600645331 /* ViewController.swift in Sources */,
 				EE64BBCA1E29EB6600645331 /* AppDelegate.swift in Sources */,
 			);
@@ -412,30 +615,39 @@
 		};
 		EE64BBEF1E29EB6600645331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B5F07422EFC52BBAA311A4 /* Pods-CampPolyHikes.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				INFOPLIST_FILE = CampPolyHikes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampPolyHikes/CampPolyHikes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		EE64BBF01E29EB6600645331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FD3C514D46BD97DC0BF2BE /* Pods-CampPolyHikes.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				INFOPLIST_FILE = CampPolyHikes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Test.CampPolyHikes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampPolyHikes/CampPolyHikes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		EE64BBF21E29EB6600645331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DBC91D730AB9E62FDFE345 /* Pods-CampPolyHikesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +662,7 @@
 		};
 		EE64BBF31E29EB6600645331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD37DC26FF23D781BF32052 /* Pods-CampPolyHikesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +677,7 @@
 		};
 		EE64BBF51E29EB6600645331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0C75551C417C6902CBD020 /* Pods-CampPolyHikesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CampPolyHikesUITests/Info.plist;
@@ -477,6 +691,7 @@
 		};
 		EE64BBF61E29EB6600645331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066040456221A925567B6245 /* Pods-CampPolyHikesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CampPolyHikesUITests/Info.plist;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GEOSwift
 import MapKit
 
 class ViewController: UIViewController {
@@ -19,15 +20,37 @@ class ViewController: UIViewController {
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         mainMapView.setRegion(coordinateRegion, animated: true)
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // set initial location in San Luis Obispo
-        let initialLocation = CLLocation(latitude: 35.282752, longitude: -120.659615)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"backgroundmountain-1.png")!)
         
-        centerMapOnLocation(location: initialLocation)
+        if let geoJSONURL = Bundle.main.url(forResource: "Trials2017", withExtension: "geojson") {
+            do {
+                let geometries = try Geometry.fromGeoJSON(geoJSONURL)
+                if let geo = geometries?[0] as? MultiPolygon {
+                    
+                    if let shapesCollection = geo.mapShape() as? MKShapesCollection {
+                        
+                        let shapes = shapesCollection.shapes
+                        
+                        for shape in shapes {
+                            if let polygon = shape as? MKPolygon {
+                                mainMapView.add(polygon)
+                            }
+                        }
+                    }
+                    
+                }
+            } catch {
+                print("Unable to load geojson data")
+            }
+        }
+            // set initial location in San Luis Obispo
+            let initialLocation = CLLocation(latitude: 35.282752, longitude: -120.659615)
+            
+            centerMapOnLocation(location: initialLocation)
     }
 }
 
