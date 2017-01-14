@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // set initial location in San Luis Obispo
         let initialLocation = CLLocation(latitude: 35.282752, longitude: -120.659615)
         
