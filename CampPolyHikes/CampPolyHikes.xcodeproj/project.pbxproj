@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6C88A621E2AA215001F6700 /* detailStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C88A611E2AA215001F6700 /* detailStoryBoard.storyboard */; };
 		EE64BBCA1E29EB6600645331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBC91E29EB6600645331 /* AppDelegate.swift */; };
 		EE64BBCC1E29EB6600645331 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBCB1E29EB6600645331 /* ViewController.swift */; };
 		EE64BBCF1E29EB6600645331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE64BBCD1E29EB6600645331 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6C88A611E2AA215001F6700 /* detailStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = detailStoryBoard.storyboard; sourceTree = "<group>"; };
 		EE64BBC61E29EB6600645331 /* CampPolyHikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampPolyHikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE64BBC91E29EB6600645331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE64BBCB1E29EB6600645331 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				EE64BBC91E29EB6600645331 /* AppDelegate.swift */,
+				A6C88A611E2AA215001F6700 /* detailStoryBoard.storyboard */,
 				EE64BBCB1E29EB6600645331 /* ViewController.swift */,
 				EE64BBCD1E29EB6600645331 /* Main.storyboard */,
 				EE64BBD01E29EB6600645331 /* Assets.xcassets */,
@@ -234,6 +237,7 @@
 			files = (
 				EE64BBD41E29EB6600645331 /* LaunchScreen.storyboard in Resources */,
 				EE64BBD11E29EB6600645331 /* Assets.xcassets in Resources */,
+				A6C88A621E2AA215001F6700 /* detailStoryBoard.storyboard in Resources */,
 				EE64BBCF1E29EB6600645331 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +507,7 @@
 				EE64BBF01E29EB6600645331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE64BBF11E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				EE64BBF31E29EB6600645331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE64BBF41E29EB6600645331 /* Build configuration list for PBXNativeTarget "CampPolyHikesUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				EE64BBF61E29EB6600645331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
