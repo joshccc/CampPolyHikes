@@ -23,8 +23,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = UIImage(named: "logo.png")
-        self.navigationItem.titleView = UIImageView(image: image)
         
         if let geoJSONURL = Bundle.main.url(forResource: "Trials2017", withExtension: "geojson") {
             do {
