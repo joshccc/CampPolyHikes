@@ -1,1 +1,1 @@
-# CampPolyHikes
+# CampPolyHikes App
