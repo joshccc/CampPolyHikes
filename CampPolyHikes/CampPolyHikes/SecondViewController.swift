@@ -18,7 +18,7 @@ class SecondViewController: UIViewController {
     @IBOutlet var nextOutlet: UIButton!
     var imageInt = 0
     
-    let regionRadius: CLLocationDistance = 50
+    let regionRadius: CLLocationDistance = 75
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
@@ -34,7 +34,7 @@ class SecondViewController: UIViewController {
         imageLabel.text = String("\(imageInt)/3")
         
         // set initial location on Terrace Hill
-        let initialLocation = CLLocation(latitude: 35.282752, longitude: -120.659615)
+        let initialLocation = CLLocation(latitude: 35.273390, longitude: -120.650421)
         
         centerMapOnLocation(location: initialLocation)
         
