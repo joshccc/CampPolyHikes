@@ -30,7 +30,7 @@
                                         <rect key="frame" x="1" y="-1" width="375" height="668"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundmountain-1" translatesAutoresizingMaskIntoConstraints="NO" id="Grz-Se-QKK">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rect" translatesAutoresizingMaskIntoConstraints="NO" id="Grz-Se-QKK">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -42,7 +42,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <items>
-                                                    <navigationItem title="Title" id="aHp-mq-jY3"/>
+                                                    <navigationItem id="aHp-mq-jY3"/>
                                                 </items>
                                             </navigationBar>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eme-jz-hd2">
@@ -56,8 +56,32 @@
                                                     <segue destination="Se6-xM-Evn" kind="show" id="v15-96-tD3"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle-mask" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-dY-a4E">
-                                                <rect key="frame" x="0.0" y="384" width="375" height="131"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gallery1" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-dY-a4E">
+                                                <rect key="frame" x="4" y="377" width="371" height="138"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyb-Hj-ER5">
+                                                <rect key="frame" x="0.0" y="443" width="27" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back" image="bestarrow"/>
+                                                <connections>
+                                                    <action selector="backImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zao-cs-hk5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6M4-MD-Q9Y">
+                                                <rect key="frame" x="336" y="441" width="31" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Next" image="bestarrow"/>
+                                                <connections>
+                                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gS8-JN-cvv"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trails" translatesAutoresizingMaskIntoConstraints="NO" id="cDe-SN-78Y">
+                                                <rect key="frame" x="79" y="8" width="216" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bestmap" translatesAutoresizingMaskIntoConstraints="NO" id="2Wh-rd-q68">
+                                                <rect key="frame" x="0.0" y="70" width="371" height="299"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
@@ -74,7 +98,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backOutletMain" destination="Hyb-Hj-ER5" id="PpR-yv-7nZ"/>
+                        <outlet property="imageOutlet" destination="zf7-dY-a4E" id="v95-sD-JgJ"/>
                         <outlet property="mainMapView" destination="eme-jz-hd2" id="goq-7w-Gbp"/>
+                        <outlet property="nextOutletMain" destination="6M4-MD-Q9Y" id="2cT-Kr-q1X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,29 +120,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundmountain-1" translatesAutoresizingMaskIntoConstraints="NO" id="rpb-33-qLi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="659"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="azn-aF-D2O">
-                                <rect key="frame" x="16" y="70" width="351" height="178"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="detail1" translatesAutoresizingMaskIntoConstraints="NO" id="azn-aF-D2O">
+                                <rect key="frame" x="0.0" y="70" width="375" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYG-ZK-gvc">
-                                <rect key="frame" x="134" y="256" width="34" height="30"/>
+                                <rect key="frame" x="110" y="249" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="Se6-xM-Evn" eventType="touchUpInside" id="Ksp-y2-3zO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-XP-HXV">
-                                <rect key="frame" x="228" y="256" width="32" height="30"/>
+                                <rect key="frame" x="228" y="249" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="Se6-xM-Evn" eventType="touchUpInside" id="IMT-xK-NZg"/>
@@ -128,17 +151,16 @@
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-BL-u2j">
-                                <rect key="frame" x="71" y="294" width="240" height="98"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wck-d0-PfF">
+                                <rect key="frame" x="54" y="621" width="267" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Terrace Hill is a 0.9 mile moderately  trafficed loop trail located near San Luis Obispo, California that features beautiful wild flowers and is good for all skill levels.</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <state key="normal" title="Button" image="eventButton"/>
+                                <connections>
+                                    <segue destination="ehg-m9-ieD" kind="show" id="bnF-1C-Bg2"/>
+                                </connections>
+                            </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-sP-as4">
-                                <rect key="frame" x="16" y="519" width="343" height="128"/>
+                                <rect key="frame" x="16" y="519" width="343" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Bh-Uq-FGZ">
@@ -147,7 +169,7 @@
                                 <items>
                                     <navigationItem title="Terrace Hill" id="eW1-ho-wUS">
                                         <barButtonItem key="backBarButtonItem" title="back to home" id="wUZ-as-zaT"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Done" style="plain" id="Dcx-g1-cSg">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" style="plain" id="Dcx-g1-cSg">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="KUG-5A-KRP"/>
                                             </connections>
@@ -155,8 +177,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="x8D-JB-dbQ">
-                                <rect key="frame" x="67" y="392" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-BL-u2j">
+                                <rect key="frame" x="67" y="271" width="240" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Terrace Hill is a 0.9 mile moderately  trafficed loop trail located near San Luis Obispo, California that features beautiful wild flowers and is good for all skill levels.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bestgraph" translatesAutoresizingMaskIntoConstraints="NO" id="GMq-E1-Zee">
+                                <rect key="frame" x="67" y="377" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -175,12 +206,94 @@
             </objects>
             <point key="canvasLocation" x="797.60000000000002" y="138.98050974512745"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="N8E-6d-EZg">
+            <objects>
+                <viewController id="ehg-m9-ieD" customClass="ThirdViewController" customModule="CampPolyHikes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WpC-r2-agB"/>
+                        <viewControllerLayoutGuide type="bottom" id="nzS-Z0-dz1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oAd-yu-22a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT9-27-VVK">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Se6-xM-Evn" kind="show" id="Obk-d5-Zf8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIt-H5-q22">
+                                <rect key="frame" x="74" y="527" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="7Yl-K9-XNc" kind="show" id="9gj-hm-5I5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="events1-1" translatesAutoresizingMaskIntoConstraints="NO" id="z02-dy-2Ak">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qsg-oA-KyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="3L9-4T-slz">
+            <objects>
+                <viewController id="7Yl-K9-XNc" customClass="fourthViewController" customModule="CampPolyHikes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="paa-fh-jcN"/>
+                        <viewControllerLayoutGuide type="bottom" id="RXq-nu-2Jr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rS8-sP-6G9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8t-sb-e94">
+                                <rect key="frame" x="0.0" y="11" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ehg-m9-ieD" kind="show" id="J6t-Gg-E3F"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finalevent" translatesAutoresizingMaskIntoConstraints="NO" id="mpl-Ck-kD5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcK-vj-Al7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2208.8000000000002" y="138.98050974512745"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Repeat Grid 1" width="174" height="275"/>
-        <image name="backgroundmountain-1" width="187" height="333"/>
-        <image name="graph" width="1102" height="386"/>
-        <image name="image1" width="593" height="305"/>
-        <image name="rectangle-mask" width="187" height="69"/>
+        <image name="bestarrow" width="600" height="600"/>
+        <image name="bestgraph" width="634" height="294"/>
+        <image name="bestmap" width="1122" height="1082"/>
+        <image name="detail1" width="1000" height="667"/>
+        <image name="eventButton" width="700" height="160"/>
+        <image name="events1-1" width="551" height="968"/>
+        <image name="finalevent" width="562" height="1050"/>
+        <image name="gallery1" width="376" height="138"/>
+        <image name="rect" width="375" height="1211"/>
+        <image name="trails" width="327" height="36"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="J6t-Gg-E3F"/>
+        <segue reference="Obk-d5-Zf8"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -18,7 +18,7 @@ class SecondViewController: UIViewController {
     @IBOutlet var nextOutlet: UIButton!
     var imageInt = 0
     
-    let regionRadius: CLLocationDistance = 75
+    let regionRadius: CLLocationDistance = 50
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
@@ -72,16 +72,16 @@ class SecondViewController: UIViewController {
     func imageGallery() {
         if imageInt == 1 {
             backOutlet.isEnabled = false
-            imageView.image = UIImage(named: "image1.jpg")
+            imageView.image = UIImage(named: "detail1.jpg")
         }
         if imageInt == 2 {
             backOutlet.isEnabled = true
             nextOutlet.isEnabled = true
-            imageView.image = UIImage(named: "image2.jpg")
+            imageView.image = UIImage(named: "detail2.jpg")
         }
         if imageInt == 3 {
             nextOutlet.isEnabled = false
-            imageView.image = UIImage(named: "image3.png")
+            imageView.image = UIImage(named: "detail3.png")
         }
         
     }

@@ -14,6 +14,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainMapView: MKMapView!
     
+    @IBOutlet var backOutletMain: UIButton!
+    @IBOutlet var nextOutletMain: UIButton!
+    @IBOutlet var imageOutlet: UIImageView!
+    var index = 0
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
@@ -23,7 +27,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        index = 1
+        backOutletMain.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        nextOutletMain.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 1.5)
+
         if let geoJSONURL = Bundle.main.url(forResource: "Trials2017", withExtension: "geojson") {
             do {
                 let geometries = try Geometry.fromGeoJSON(geoJSONURL)
@@ -50,5 +57,36 @@ class ViewController: UIViewController {
             
             centerMapOnLocation(location: initialLocation)
     }
+    
+    
+    @IBAction func nextImage(_ sender: Any) {
+        index += 1
+        self.imageGallery()
+        
+    }
+    
+    
+    @IBAction func backImage(_ sender: Any) {
+        index -= 1
+        self.imageGallery()
+    }
+    
+    func imageGallery() {
+        if index == 1 {
+            backOutletMain.isEnabled = false
+            imageOutlet.image = UIImage(named: "gallery1.png")
+        }
+        if index == 2 {
+            backOutletMain.isEnabled = true
+            nextOutletMain.isEnabled = true
+            imageOutlet.image = UIImage(named: "gallery2.png")
+        }
+        if index == 3 {
+            nextOutletMain.isEnabled = false
+            imageOutlet.image = UIImage(named: "gallery3.png")
+        }
+        
+    }
+
 }
 
