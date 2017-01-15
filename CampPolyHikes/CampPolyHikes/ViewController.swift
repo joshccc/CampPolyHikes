@@ -26,8 +26,6 @@ class ViewController: UIViewController {
         let image = UIImage(named: "logo.png")
         self.navigationItem.titleView = UIImageView(image: image)
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"backgroundmountain-1.png")!)
-        
         if let geoJSONURL = Bundle.main.url(forResource: "Trials2017", withExtension: "geojson") {
             do {
                 let geometries = try Geometry.fromGeoJSON(geoJSONURL)
