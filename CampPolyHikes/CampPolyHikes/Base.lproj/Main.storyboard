@@ -142,6 +142,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-sP-as4">
+                                <rect key="frame" x="16" y="447" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -151,11 +155,12 @@
                         <outlet property="imageLabel" destination="lTC-31-hdn" id="Waa-jH-Mna"/>
                         <outlet property="imageView" destination="azn-aF-D2O" id="aAb-5p-KTD"/>
                         <outlet property="nextOutlet" destination="7GR-XP-HXV" id="RSJ-ay-UT2"/>
+                        <outlet property="trailMap" destination="Kdw-sP-as4" id="2EV-Cz-fbt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUo-kd-9Zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="139"/>
+            <point key="canvasLocation" x="797.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
