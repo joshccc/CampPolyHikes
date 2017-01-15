@@ -30,6 +30,14 @@
                                         <rect key="frame" x="1" y="-1" width="375" height="668"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundmountain-1" translatesAutoresizingMaskIntoConstraints="NO" id="Grz-Se-QKK">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Repeat Grid 1" translatesAutoresizingMaskIntoConstraints="NO" id="yhF-Lu-PHo">
+                                                <rect key="frame" x="0.0" y="533" width="375" height="514"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Psf-iN-nVs">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -50,10 +58,6 @@
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle-mask" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-dY-a4E">
                                                 <rect key="frame" x="0.0" y="384" width="375" height="131"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Repeat Grid 1" translatesAutoresizingMaskIntoConstraints="NO" id="yhF-Lu-PHo">
-                                                <rect key="frame" x="0.0" y="533" width="375" height="514"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
@@ -156,6 +160,7 @@
     </scenes>
     <resources>
         <image name="Repeat Grid 1" width="174" height="275"/>
+        <image name="backgroundmountain-1" width="187" height="333"/>
         <image name="image1" width="593" height="305"/>
         <image name="rectangle-mask" width="187" height="69"/>
     </resources>
