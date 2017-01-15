@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let image = UIImage(named: "logo.png")
+        self.navigationItem.titleView = UIImageView(image: image)
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named:"backgroundmountain-1.png")!)
         

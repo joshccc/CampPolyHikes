@@ -41,8 +41,12 @@
                                     <segue destination="Se6-xM-Evn" kind="show" id="v15-96-tD3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Repeat Grid 1" translatesAutoresizingMaskIntoConstraints="NO" id="yhF-Lu-PHo">
+                                <rect key="frame" x="0.0" y="558" width="375" height="514"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle-mask" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-dY-a4E">
-                                <rect key="frame" x="0.0" y="369" width="375" height="131"/>
+                                <rect key="frame" x="0.0" y="389" width="375" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -139,6 +143,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Repeat Grid 1" width="174" height="275"/>
         <image name="image1" width="593" height="305"/>
         <image name="rectangle-mask" width="187" height="69"/>
     </resources>
